@@ -1,0 +1,52 @@
+.stock-card {
+  background: linear-gradient(145deg, #1e1e3f, #252550);
+  border-radius: 12px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.stock-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  border-color: rgba(0, 210, 255, 0.3);
+}
+
+.stock-card-header {
+  margin-bottom: 12px;
+}
+
+.stock-symbol {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.stock-price {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.stock-change {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.stock-change.positive {
+  color: #00c853;
+}
+
+.stock-change.negative {
+  color: #ff5252;
+}
+
+.change-percent {
+  opacity: 0.8;
+}

@@ -1,0 +1,202 @@
+.portfolio-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.portfolio-loading {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: #888;
+}
+
+.portfolio-header {
+  margin-bottom: 30px;
+}
+
+.portfolio-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.portfolio-subtitle {
+  color: #888;
+  font-size: 1rem;
+}
+
+.portfolio-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.summary-card {
+  background: linear-gradient(145deg, #1e1e3f, #252550);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.summary-label {
+  display: block;
+  font-size: 0.8rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.summary-value {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.summary-value.accent {
+  color: #00d2ff;
+}
+
+.summary-value.positive {
+  color: #00c853;
+}
+
+.summary-value.negative {
+  color: #ff5252;
+}
+
+.pl-percent {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-left: 4px;
+}
+
+.empty-portfolio {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(145deg, #1e1e3f, #252550);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.empty-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.empty-portfolio h3 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.empty-portfolio p {
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.browse-btn {
+  background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.browse-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 210, 255, 0.3);
+}
+
+.holdings-table-container {
+  background: linear-gradient(145deg, #1e1e3f, #252550);
+  border-radius: 12px;
+  overflow-x: auto;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.holdings-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.holdings-table th {
+  padding: 16px 20px;
+  text-align: left;
+  color: #888;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-weight: 600;
+}
+
+.holdings-table td {
+  padding: 16px 20px;
+  color: #e0e0e0;
+  font-size: 0.95rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.holdings-table tr:last-child td {
+  border-bottom: none;
+}
+
+.holdings-table tr:hover td {
+  background: rgba(0, 210, 255, 0.02);
+}
+
+.holding-symbol {
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.holding-name {
+  color: #b0b0b0;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pl-value {
+  font-weight: 600;
+}
+
+.pl-value.positive { color: #00c853; }
+.pl-value.negative { color: #ff5252; }
+
+.pl-value small {
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.trade-btn {
+  background: rgba(0, 210, 255, 0.1);
+  border: 1px solid rgba(0, 210, 255, 0.3);
+  color: #00d2ff;
+  padding: 6px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.trade-btn:hover {
+  background: rgba(0, 210, 255, 0.2);
+}

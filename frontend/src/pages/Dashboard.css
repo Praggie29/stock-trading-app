@@ -1,0 +1,253 @@
+.dashboard {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.dashboard-loading {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: #888;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(0, 210, 255, 0.1);
+  border-top-color: #00d2ff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.dashboard-subtitle {
+  color: #888;
+  font-size: 1rem;
+}
+
+.dashboard-balance {
+  background: linear-gradient(145deg, #1e1e3f, #252550);
+  border: 1px solid rgba(0, 210, 255, 0.2);
+  border-radius: 12px;
+  padding: 16px 24px;
+  text-align: center;
+}
+
+.dashboard-balance .balance-label {
+  display: block;
+  font-size: 0.8rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+.dashboard-balance .balance-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00d2ff;
+}
+
+.search-section {
+  margin-bottom: 40px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 0 16px;
+  transition: all 0.3s;
+}
+
+.search-container:focus-within {
+  border-color: #00d2ff;
+  box-shadow: 0 0 0 3px rgba(0, 210, 255, 0.1);
+}
+
+.search-icon {
+  font-size: 1.2rem;
+  margin-right: 12px;
+}
+
+.search-input {
+  flex: 1;
+  background: none;
+  border: none;
+  padding: 16px 0;
+  color: #ffffff;
+  font-size: 1rem;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: #555;
+}
+
+.search-spinner {
+  font-size: 1.2rem;
+}
+
+.search-results {
+  background: #1e1e3f;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.search-result-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.search-result-item:hover {
+  background: rgba(0, 210, 255, 0.05);
+}
+
+.search-result-item:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.result-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.result-symbol {
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.result-name {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.result-price {
+  text-align: right;
+}
+
+.result-current {
+  display: block;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.result-change {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.result-change.positive { color: #00c853; }
+.result-change.negative { color: #ff5252; }
+
+.market-section {
+  margin-bottom: 40px;
+}
+
+.market-section h2,
+.news-section h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.stocks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.news-section {
+  margin-bottom: 40px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.news-card {
+  background: linear-gradient(145deg, #1e1e3f, #252550);
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.news-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  border-color: rgba(0, 210, 255, 0.3);
+}
+
+.news-image {
+  height: 180px;
+  overflow: hidden;
+}
+
+.news-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 16px;
+}
+
+.news-content h3 {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.news-content p {
+  color: #888;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.news-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+  font-size: 0.8rem;
+}
